@@ -17,7 +17,8 @@ export default env => {
 			pathinfo: ifNotProd()
 		},
 		devServer: {
-			overlay: true
+			overlay: true,
+			historyApiFallback: true
 		},
 		devtool: ifProd('source-map', 'eval'),
 		module: {
